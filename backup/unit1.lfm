@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 420
+  Height = 254
+  Top = 239
+  Width = 502
+  Caption = 'Form1'
+  ClientHeight = 254
+  ClientWidth = 502
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 64
+    Height = 21
+    Top = 65
+    Width = 42
+    Caption = 'Nama'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 21
+    Top = 109
+    Width = 32
+    Caption = 'Nilai'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtNama: TEdit
+    Left = 167
+    Height = 23
+    Top = 65
+    Width = 80
+    TabOrder = 0
+  end
+  object edtNilai: TEdit
+    Left = 167
+    Height = 23
+    Top = 109
+    Width = 80
+    TabOrder = 1
+    Text = '0'
+  end
+  object Panel1: TPanel
+    Left = 332
+    Height = 254
+    Top = 0
+    Width = 170
+    Align = alRight
+    ClientHeight = 254
+    ClientWidth = 170
+    Color = clBlack
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+    object Label3: TLabel
+      Left = 13
+      Height = 25
+      Top = 13
+      Width = 127
+      Caption = 'Status Kelulusan'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -18
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 13
+      Height = 25
+      Top = 96
+      Width = 47
+      Caption = 'Grade'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -18
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object lblStatus: TLabel
+      Left = 13
+      Height = 25
+      Top = 51
+      Width = 67
+      Caption = 'lblStatus'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -18
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object lblGrade: TLabel
+      Left = 13
+      Height = 65
+      Top = 147
+      Width = 179
+      Caption = 'lblGrade'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -48
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+  end
+  object btnHitungNilai: TButton
+    Left = 167
+    Height = 25
+    Top = 160
+    Width = 80
+    Caption = 'Hitung Nilai'
+    TabOrder = 3
+    OnClick = btnHitungNilaiClick
+  end
+end
